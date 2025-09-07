@@ -1,6 +1,5 @@
 name: All Builds (Linux, macOS, Windows, Android, IPA, APK, AAB)
 
-
 on:
   # Runs on push to any of the below branches
   push:
