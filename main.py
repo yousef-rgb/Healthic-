@@ -1,6 +1,7 @@
 import requests
 import flet as ft 
 import re  
+import os
 
 # --- إعدادات الموديل والـ API --
 MODEL = "deepseek/deepseek-chat-v3.1:free"
@@ -25,7 +26,7 @@ SYSTEM_PROMPT = (
     "- إجابتك يجب أن تكون مختصرة وواضحة، مع تقسيم المحتوى إلى أسطر لا يتعدى كل سطر 7 كلمات.\n"
 )
 
-API_KEY = "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"
+API_KEY = os.environ.get("OPENROUTER_API_KEY", "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")
 
 HEADERS = {
     "Authorization": f"Bearer {API_KEY}",
