@@ -2,7 +2,17 @@ name: Healthic
 description: مساعد طبي ذكي
 version: 1.0.0
 package: com.team0.healthic
+icon: assets/icon.png
+splash: 
+  image: assets/splash.png
+  image_dark: assets/splash_dark.png
 products: 
   - apk
 permissions:
   - android.permission.INTERNET
+build:
+  target:
+    platform: android
+    min_sdk_version: 21
+    target_sdk_version: 33
+assets_dir: assets
